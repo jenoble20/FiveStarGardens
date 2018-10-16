@@ -81,14 +81,30 @@ header{
 #nav-list{
   display: flex;
   justify-content: space-around;
+  align-items: center;
   list-style: none;
   width: 100%;
 }
 
 #nav-list li{
-  font-size: 1.8rem;
+  font-size: 1.53rem;
   padding: 1rem 0;
+  margin: 0;
+  text-align: center;
+  transition: text-shadow 0.5s ease-out,
+              color 0.5s ease-out,
+              width 0.5s ease-out,
+              transform 0.5s ease-out,
+              font-weight 0.5s ease-out;
 }
+
+#nav-list li:hover{
+    text-shadow: 0 0 3px;
+    color: rgba(28, 66, 24, 1);
+    transform: scale(1.2);
+    font-weight: 900;
+}
+
 
 nav{
   grid-column: 2/5;
